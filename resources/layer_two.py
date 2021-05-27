@@ -44,8 +44,6 @@ def layer_two(layer_one_file):
     for i in range(len(df_layer_one_file["df_author_url"])):
         print("Moving to " + (df_layer_one_file["df_author_url"][i] + "/publications/"))
         driver.get((df_layer_one_file["df_author_url"][i] + "/publications/"))  # Moves to unique paper page
-        time.sleep(2)
-
         paperTitle = driver.find_elements_by_css_selector(".rendering_short.rendering_contributiontojournal_short > h3 > a > span")
         paperTitles = [el.text for el in paperTitle]
 
@@ -74,10 +72,10 @@ def layer_two(layer_one_file):
             layer_two_data = layer_two_data.append(data, ignore_index=True)
 
             layer_two_data.to_csv("./layer_two_data.csv", index=False)
+            time.sleep(2)
 
     layer_two_data.to_csv("./layer_two_data.csv", index=False)
     print("CSV saved")
     print("End of layer two")
-
-
-layer_two("layer_one.csv")
+    driver.close()
+    return True
