@@ -15082,3 +15082,7 @@ venv/share/jupyter/nbextensions/jupyter-js-widgets/extension.js
 venv/share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map
 venv/share/man/man1/ipython.1.gz
 Untitled.ipynb
+/venv/
+/resources/backend/Search Engine Test.ipynb
+/resources/backend/TF-IDF Based Search.ipynb
+/resources/backend/searchEngine.ipynb
