@@ -1,0 +1,13 @@
+/venv/
+/.ipynb_checkpoints/
+/resources/backend/.ipynb_checkpoints/
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/7071CEM-R.iml
+resources/backend/TF-IDF Based Search.ipynb
+resources/backend/searchEngine.ipynb
+resources/backend/Search Engine Test.ipynb
