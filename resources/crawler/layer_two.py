@@ -13,6 +13,7 @@ driver = webdriver.Chrome(options=options, executable_path="../chromedriver_win3
 
 
 def layer_two(layer_one_file):
+    print("Layer two is starting")
     """
 
     The objective of layer two is obtain the list of papers and its urls, in order to start layer three.

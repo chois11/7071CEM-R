@@ -88,6 +88,9 @@ class Ui_searchUI(object):
         self.quote_2.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.quote_2.setFrameShadow(QtWidgets.QFrame.Plain)
         self.quote_2.setObjectName("quote_2")
+        self.settings_bton = QtWidgets.QPushButton(searchUI)
+        self.settings_bton.setGeometry(QtCore.QRect(1000, 500, 75, 23))
+        self.settings_bton.setObjectName("settings_bton")
         self.welcomeMessage.raise_()
         self.exit.raise_()
         self.quote.raise_()
@@ -95,6 +98,7 @@ class Ui_searchUI(object):
         self.sendQuary.raise_()
         self.tableView.raise_()
         self.quote_2.raise_()
+        self.settings_bton.raise_()
 
         self.retranslateUi(searchUI)
         QtCore.QMetaObject.connectSlotsByName(searchUI)
@@ -125,3 +129,4 @@ class Ui_searchUI(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Calibri\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://www.quoteambition.com/thomas-aquinas-quotes/\"><span style=\" font-family:\'-apple-system\',\'system-ui\',\'BlinkMacSystemFont\',\'Segoe UI\',\'Helvetica\',\'Arial\',\'sans-serif\',\'Apple Color Emoji\',\'Segoe UI Emoji\',\'Segoe UI Symbol\'; font-size:10pt; font-weight:296; text-decoration: underline; color:#000000;\">Showing 100 result per search</span></a></p></body></html>"))
+        self.settings_bton.setText(_translate("searchUI", "Settings"))

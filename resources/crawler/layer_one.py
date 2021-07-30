@@ -25,6 +25,7 @@ def layer_one():
     # Initialise variable
 
     # start url
+    print("Layer one is starting")
     url = "https://pureportal.coventry.ac.uk/en/organisations/coventry-university/persons/"
     driver.get(url)
     print("Chrome is open")

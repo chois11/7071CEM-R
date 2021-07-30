@@ -256,6 +256,19 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://www.quoteambition.com/thomas-aquinas-quotes/&quot;&gt;&lt;span style=&quot; font-family:'-apple-system','system-ui','BlinkMacSystemFont','Segoe UI','Helvetica','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size:10pt; font-weight:296; text-decoration: underline; color:#000000;&quot;&gt;Showing 100 result per search&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="settings_bton">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>500</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </widget>
   <zorder>welcomeMessage</zorder>
   <zorder>exit</zorder>
   <zorder>quote</zorder>
@@ -263,6 +276,7 @@ p, li { white-space: pre-wrap; }
   <zorder>sendQuary</zorder>
   <zorder>tableView</zorder>
   <zorder>quote_2</zorder>
+  <zorder>settings_bton</zorder>
  </widget>
  <resources/>
  <connections/>

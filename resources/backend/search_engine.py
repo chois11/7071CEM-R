@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 df_dataset = pd.read_csv("../crawler/layer_three_data.csv")
-print("Database loaded")
+print("Database loaded in search function")
 
 df_dataset = df_dataset.drop_duplicates(subset=['df_paper_title'])  # remove duplicates
 

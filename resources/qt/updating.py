@@ -15,35 +15,23 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(400, 300)
-        self.settings = QtWidgets.QTextBrowser(Form)
-        self.settings.setEnabled(False)
-        self.settings.setGeometry(QtCore.QRect(150, 40, 101, 31))
-        self.settings.setMouseTracking(False)
-        self.settings.setAcceptDrops(False)
-        self.settings.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.settings.setObjectName("settings")
-        self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(140, 240, 121, 23))
-        self.pushButton.setObjectName("pushButton")
-        self.settings_2 = QtWidgets.QTextBrowser(Form)
-        self.settings_2.setEnabled(False)
-        self.settings_2.setGeometry(QtCore.QRect(110, 70, 171, 31))
-        self.settings_2.setMouseTracking(False)
-        self.settings_2.setAcceptDrops(False)
-        self.settings_2.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.settings_2.setObjectName("settings_2")
-        self.noOfPaper = QtWidgets.QTextBrowser(Form)
-        self.noOfPaper.setEnabled(False)
-        self.noOfPaper.setGeometry(QtCore.QRect(140, 110, 101, 31))
-        self.noOfPaper.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.noOfPaper.setObjectName("noOfPaper")
-        self.settings_3 = QtWidgets.QTextBrowser(Form)
-        self.settings_3.setEnabled(False)
-        self.settings_3.setGeometry(QtCore.QRect(110, 170, 171, 31))
-        self.settings_3.setMouseTracking(False)
-        self.settings_3.setAcceptDrops(False)
-        self.settings_3.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.settings_3.setObjectName("settings_3")
+        self.updating_text = QtWidgets.QTextBrowser(Form)
+        self.updating_text.setEnabled(False)
+        self.updating_text.setGeometry(QtCore.QRect(150, 40, 101, 31))
+        self.updating_text.setMouseTracking(False)
+        self.updating_text.setAcceptDrops(False)
+        self.updating_text.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.updating_text.setObjectName("updating_text")
+        self.cancel_bton = QtWidgets.QPushButton(Form)
+        self.cancel_bton.setGeometry(QtCore.QRect(140, 220, 121, 23))
+        self.cancel_bton.setObjectName("cancel_bton")
+        self.warning_massage = QtWidgets.QTextBrowser(Form)
+        self.warning_massage.setEnabled(False)
+        self.warning_massage.setGeometry(QtCore.QRect(110, 140, 171, 31))
+        self.warning_massage.setMouseTracking(False)
+        self.warning_massage.setAcceptDrops(False)
+        self.warning_massage.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.warning_massage.setObjectName("warning_massage")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -51,28 +39,14 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.settings.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.updating_text.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">Updating...</span></p></body></html>"))
-        self.pushButton.setText(_translate("Form", "Cancel"))
-        self.settings_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.cancel_bton.setText(_translate("Form", "Cancel"))
+        self.warning_massage.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Number of collected paper</p></body></html>"))
-        self.noOfPaper.setMarkdown(_translate("Form", "0\n"
-"\n"
-""))
-        self.noOfPaper.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Calibri\';\">0</span></p></body></html>"))
-        self.noOfPaper.setPlaceholderText(_translate("Form", "0"))
-        self.settings_3.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Do not close Chrome</p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Do not close Chrome</span></p></body></html>"))

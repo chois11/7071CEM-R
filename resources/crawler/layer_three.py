@@ -4,6 +4,8 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+from datetime import datetime # Config file purpose
+
 options = Options()
 options.add_argument("--incognito")
 options.add_argument("--window-size=1920x1080")
@@ -13,6 +15,7 @@ driver = webdriver.Chrome(options=options, executable_path="../chromedriver_win3
 
 
 def layer_three(layer_two_file):
+    print("Layer three is starting")
     '''
 
     This layer will retrieve layer_two.csv.
@@ -102,8 +105,21 @@ def layer_three(layer_two_file):
     print("CSV saved")
 
     print("End of layer three")
+
+    f = open("version.cfg", "x")
+
+    # datetime object containing current date and time
+    now = datetime.now()
+
+    # dd/mm/YY H:M:S
+    dt = now.strftime("%d/%m/%Y %H:%M:%S")
+    print("Saved version: ", dt)
+
+    f.write(dt)
+    f.close()
+
     driver.close()
     return True
 
 
-layer_three("layer_two_data.csv")
+# layer_three("layer_two_data.csv")
